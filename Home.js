@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import React from 'react';
-import { View, Image } from 'react-native';
+import { View, Image} from 'react-native';
 import { Card, Title, Paragraph, Text, Button } from 'react-native-paper';
 import * as Location from 'expo-location';
 
@@ -43,7 +43,7 @@ export default function Home() {
         />
         <Card.Content>
           <Title style={{ color: "white", textAlign: "center" }}>Welcome to the Digital Driving Logbook{'\n'}{'\n'}</Title>
-          <Paragraph style={{ color: "white", textAlign: "center" }}>Add Log:  Save logbook entries{'\n'}{'\n'}Map:  Display live route and distance{'\n'}{'\n'}Saved logs:  View logbook entries</Paragraph>
+          <Paragraph style={{ color: "white", textAlign: "center" }}>Add Log:  Save logbook entries{'\n'}{'\n'}Map:  Display live route and distance{'\n'}{'\n'}Saved logs:  View logbook entries and export saved data.</Paragraph>
         </Card.Content>
         <Card.Actions>
           <Button mode="contained" style={{ backgroundColor: "red", marginRight: "30%" }} onPress={() => fetchWeather(location?.coords.latitude, location?.coords.longitude)}>Fetch Weather</Button>
